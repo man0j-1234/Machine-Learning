@@ -107,7 +107,7 @@ def classify_query(text):
     time_range = extract_date_range(text) if category == "Calendar" else None
     return category, time_range
 
-st.title("Gmail vs Calendar Query Classifier")
+st.title("Gmail vs Calendar Query Classifier - by Manoj")
 user_input = st.text_input("Enter your query below :")
 if user_input:
     prediction, range_info = classify_query(user_input)
